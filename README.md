@@ -26,7 +26,20 @@ as well as the original paper because our work would not have been possible with
 
 ### Model
 
-the best perfoming model can be found in train30 and is the one shown in our comment paper with good overall metrics:
+the best perfoming model can be found in train30 and is the one shown in our comment paper. 
+
+We want to point out the following Technical NOTES:
+
+- SAGE Pooling leads to best model performance on most train/test/val splits
+- GraphConv Pooling leads to lower variance between train/test/val splits i.e. might be easier to train
+- when trained on MD features:
+	- eyring parameters may vary for different temperatures because they are informed about the state points via MD features 
+	- ...but not about temperature directly
+	- MD features might be noisy which could propagate into the predictions and/or favor overfitting
+- atom features seem to play a minor role when system information is available in the form of MD features
+
+
+The overall RMSD and R2 metrics are good:
 
 ![](train30/_pub.png)
 
@@ -35,9 +48,4 @@ the best perfoming model can be found in train30 and is the one shown in our com
 ![](train30/eyring_pred.png)
 
 
-### Technical NOTES:
-
-- SAGE Pooling leads to best model performance on most train/test/val splits
-- GraphConv Pooling leads to lower variance between train/test/val splits i.e. might be easier to train
-- when trained on external features, eyring parameters may vary for different temperature
 
