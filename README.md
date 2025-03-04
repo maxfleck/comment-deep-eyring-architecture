@@ -26,7 +26,7 @@ as well as the original paper because our work would not have been possible with
 
 ### Model
 
-the best perfoming model can be found in train30 and is the one shown in our comment paper. 
+the best perfoming model can be found in train30 and is the one shown in our comment paper. You might wanna start with analyze.ipynb to find out how to run the model.
 
 We want to point out the following TECHNICAL NOTES:
 
