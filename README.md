@@ -28,7 +28,7 @@ as well as the original paper because our work would not have been possible with
 
 the best perfoming model can be found in train30 and is the one shown in our comment paper. 
 
-We want to point out the following Technical NOTES:
+We want to point out the following TECHNICAL NOTES:
 
 - SAGE Pooling leads to best model performance on most train/test/val splits
 - GraphConv Pooling leads to lower variance between train/test/val splits i.e. might be easier to train
