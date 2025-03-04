@@ -24,8 +24,18 @@ as well as the original paper because our work would not have been possible with
 }
 ```
 
+### Model
 
-## Technical NOTES:
+the best perfoming model can be found in train30 and is the one shown in our comment paper with good overall metrics:
+
+![](train30/_pub.png)
+
+...as well as good predictive capabilities with low MEADs on the the test data:
+
+![](train30/eyring_pred.png)
+
+
+### Technical NOTES:
 
 - SAGE Pooling leads to best model performance on most train/test/val splits
 - GraphConv Pooling leads to lower variance between train/test/val splits i.e. might be easier to train
