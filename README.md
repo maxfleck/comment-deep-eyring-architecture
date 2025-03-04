@@ -1,5 +1,6 @@
-# comment-deep-eyring
-Code for Comment on Paper: Advancing material property prediction: using physics-informed machine learning models for viscosity
+# comment-deep-eyring-architecture
+
+### Code for Comment on Paper: Advancing material property prediction: using physics-informed machine learning models for viscosity
 
 ## Technical NOTES:
 
